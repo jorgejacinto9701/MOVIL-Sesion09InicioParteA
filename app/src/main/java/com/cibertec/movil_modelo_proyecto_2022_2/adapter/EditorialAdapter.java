@@ -49,7 +49,7 @@ public class EditorialAdapter extends ArrayAdapter<Editorial>  {
         TextView  txtPais = row.findViewById(R.id.idEditorialItemPais);
         txtPais.setText(String.valueOf(obj.getPais().getNombre()));
 
-        new Thread(new Runnable() {
+        /*new Thread(new Runnable() {
             @Override
             public void run() {
                 try {
@@ -71,7 +71,7 @@ public class EditorialAdapter extends ArrayAdapter<Editorial>  {
                 }
             }
         }).start();
-
+        */
 
         return row;
     }
